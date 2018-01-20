@@ -6,6 +6,7 @@ import router from './router'
 import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
+import 'lib-flexible'
 Vue.use($);
 Vue.config.productionTip = false
 

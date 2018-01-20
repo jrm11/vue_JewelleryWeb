@@ -1,0 +1,155 @@
+html {
+        font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        background: #F2F2F2;
+}
+
+
+html,
+body {
+        /*禁止选中*/
+        -webkit-user-select: none;
+        user-select: none;
+}
+article, aside, footer, header, nav, section {
+        display: block
+}
+
+*,
+*::before,
+*::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ol,
+ul,
+li,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline
+}
+
+a {
+        text-decoration: none;
+        /*禁用长按页面时的弹出菜单(iOS下有效)*/
+        -webkit-touch-callout: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects
+}
+
+li {
+        list-style: none
+}
+
+a:active,
+a:hover {
+        outline: 0
+}
+
+img {
+        border: none;
+        -webkit-touch-callout: none;
+        vertical-align: middle;
+}
+
+svg:not(:root) {
+        overflow: hidden
+}
+
+hr {
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+        border: 0;
+}
+.solid-hr{
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dashed-hr{
+        border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+/*去除点击链接和文本框默认的半透明覆盖层(ios)或者虚框(android)*/
+
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+        /*去除ios点击一个链接出现一个半透明灰色遮罩*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        line-height: normal
+}
+button{
+        border:none;
+}
+input:focus {
+        outline: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer
+}
+
+table {
+        border-collapse: collapse;
+        border-spacing: 0
+}
+
+td,
+th {
+        padding: 0
+}
+
+.fl {
+        float: left;
+}
+
+.fr {
+        float: right;
+}
+
+/* 清除浮动*/
+.clearfix {
+        *zoom: 1;
+}
+
+.clearfix:after {
+        display: table;
+        content: '';
+        clear: both;
+}

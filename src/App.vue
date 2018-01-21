@@ -11,5 +11,8 @@
 </script>
 <style>
       @import "assets/style/reset.scss";
+        #app{
+                height: 100%;
+        }
 </style>
 

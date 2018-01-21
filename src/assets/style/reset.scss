@@ -2,15 +2,46 @@ html {
         font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
-        background: #F2F2F2;
 }
 
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+        width: 0px;
+        height: 0px;
+        background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+        -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+        -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
 
 html,
 body {
         /*禁止选中*/
         -webkit-user-select: none;
         user-select: none;
+        height: 100%;
+        width: 100%;
+        background-color: #F5F5F5;
 }
 article, aside, footer, header, nav, section {
         display: block
@@ -54,7 +85,6 @@ a {
         /*禁用长按页面时的弹出菜单(iOS下有效)*/
         -webkit-touch-callout: none;
         background-color: transparent;
-        -webkit-text-decoration-skip: objects
 }
 
 li {
@@ -113,7 +143,7 @@ textarea {
 button{
         border:none;
 }
-input:focus {
+input:focus,button:focus {
         outline: none;
 }
 

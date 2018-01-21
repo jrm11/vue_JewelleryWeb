@@ -1,3 +1,7 @@
-@function p2m($px){
-	@return $px*320/$designWidth/20 + rem;
-}
+//$designWidth:640;
+//@function rem($px){
+//	@return $px*320/$designWidth/20 + rem;
+//}
+//@function torem($px) {
+//	@return $px / 75px * 1rem;
+//}

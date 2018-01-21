@@ -3,11 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import $ from 'jquery'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min'
 import 'lib-flexible'
-Vue.use($);
+import './assets/style/px2rem.scss'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

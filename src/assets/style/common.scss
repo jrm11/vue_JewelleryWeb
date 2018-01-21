@@ -3,16 +3,13 @@
 $BG409EFF: #409EFF;
 $BGF5F5F5: #F5F5F5;
 $BGFFF: #FFFFFF;
+$BGDDD: #DDDDDD;
 //字体颜色
 $CFFF: #FFFFFF;
 $C666: #666666;
 $C333: #333333;
 
 //边框颜色
-$BDDDD: #DDDDDD;
+$BDDD: #DDDDDD;
 
-@mixin flexBox {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-}
+

@@ -10,8 +10,6 @@
         }
 </script>
 <style>
-        html, body {
-                background: #f2f2f2;
-        }
+      @import "assets/style/reset.scss";
 </style>
 

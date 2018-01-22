@@ -33,21 +33,14 @@ export default new Router({
                         },
                         component: (resolve) => require(['@/views/login.vue'], resolve)
                 },
+
                 {
-                        path: '/collection',
-                        name: "collection",
-                        meta: {
-                                title: "BB收藏"
-                        },
-                        component: (resolve) => require(['@/views/collection.vue'], resolve)
-                },
-                {
-                        path: '/header',
-                        name: "header",
+                        path: '/index',
+                        name: "index",
                         meta: {
                                 title: "头部"
                         },
-                        component: (resolve) => require(['@/components/header.vue'], resolve)
+                        component: (resolve) => require(['@/views/stockGoods/index.vue'], resolve)
                 }
         ]
 })

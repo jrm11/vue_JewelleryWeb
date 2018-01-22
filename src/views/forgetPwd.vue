@@ -1,16 +1,12 @@
 <template>
     <section>
-        注册
+        忘记密码
     </section>
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                msg: ''
-            }
-        }
+        name: "forget-pwd"
     }
 </script>
 

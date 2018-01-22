@@ -1,5 +1,6 @@
+$designWidth:37.5px;
 @function torem($px) {
-	@return $px / 75px * 1rem;
+	@return $px / $designWidth* 1rem;
 }
 
 @mixin fz($font-size) {

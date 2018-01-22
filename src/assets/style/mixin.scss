@@ -1,8 +1,7 @@
 
 // 背景图片地址和大小
 @mixin bis($url) { 
-	background-image: url($url);
-	background-repeat: no-repeat;
+	background-image: url($url) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -70,4 +69,10 @@
 	display: flex;
 	display: -webkit-flex;
 	flex-direction: row;
+}
+// 文字超出显示省略号
+@mixin textOverFlow{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }

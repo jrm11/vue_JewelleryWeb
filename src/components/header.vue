@@ -1,6 +1,6 @@
 <template>
         <div class="header">
-                <h3 class="title">头部</h3>
+                <h3 class="title">{{headTitle}}</h3>
                 <a class="btn-back" href="#"><img src="../assets/image/back.svg" alt=""></a>
         </div>
 </template>
@@ -11,7 +11,8 @@
                         return {
                                 msg: ''
                         }
-                }
+                },
+                props: ['headTitle']
         }
 </script>
 
@@ -21,11 +22,11 @@
                 position: relative;
                 background: $BG409EFF;
                 color: $CFFF;
-                height: 80px;
+                line-height: torem(46px);
                 .title {
                         text-align: center;
-                        font-size: 30px;
-                        line-height: 80px;
+                        font-size: fz(19px);
+                        line-height: torem(46px);
                 }
 
                 .btn-back{

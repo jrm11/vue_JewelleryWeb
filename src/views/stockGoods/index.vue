@@ -1,6 +1,6 @@
 <template>
         <section class="collection">
-                <header-top></header-top>
+                <header-top head-title= '主页' ></header-top>
                 <user-nav></user-nav>
 
                 <section class="footer-nav">

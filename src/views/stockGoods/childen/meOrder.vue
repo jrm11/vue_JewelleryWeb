@@ -1,7 +1,7 @@
 <template>
-        <div class="meOrder">
-                我的订单
-        </div>
+        <section class="order-main">
+             <h3>我的订单</h3>
+        </section>
 </template>
 
 <script>
@@ -15,6 +15,5 @@
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
-        .meOrder {
-        }
+
 </style>

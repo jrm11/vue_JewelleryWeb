@@ -1,8 +1,9 @@
 <template>
         <section class="collection">
-                <header-top head-title= '主页' ></header-top>
+                <header-top head-title='主页'></header-top>
+                <header-set></header-set>
+                <header-nav></header-nav>
                 <user-nav></user-nav>
-
                 <section class="footer-nav">
                         <button class="del">删除</button>
                         <button class="in">进入谈价</button>
@@ -12,22 +13,19 @@
 
 <script>
         import headerTop from '@/components/header.vue'
+        import headerSet from '@/components/header-set.vue'
+        import headerNav from '@/components/header-nav.vue'
         import userNav from '@/components/user-nav.vue'
 
         export default {
                 data() {
-                        return {
-                                currentView: "meOrder"
-                        }
+                        return {}
                 },
                 components: {
                         headerTop,
                         userNav,
-                },
-                methods: {
-                        toggleTabs(tabText){
-                                this.currentView = tabText;
-                        }
+                        headerSet,
+                        headerNav
                 }
 
         }
@@ -123,7 +121,7 @@
                         bottom: 0;
                         button {
                                 flex: 1;
-                                padding: torem(30px);
+                                padding: torem(10px);
                                 @include sc(26px, $CFFF)
                         }
                         .in {

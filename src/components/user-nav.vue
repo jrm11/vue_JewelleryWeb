@@ -1,30 +1,5 @@
 <template>
         <section class="user-nav">
-                <!--用户信息-->
-                <div class="user clearfix">
-                        <div href="#" class="user-head">
-                                <a href=""><img src="../assets/image/avatar.png" alt="头像"/></a>
-                        </div>
-                        <div class="user-info">
-                                <p class="user-name">小明明</p>
-                                <p class="user-level">进场 级别10</p>
-
-                        </div>
-                        <div class="user-set">
-                                <a href="#" class="btn-setting">
-                                        <img src="../assets/image/setting.svg" alt="">
-                                </a>
-                        </div>
-                </div>
-                <!--导航-->
-                <ul class="nav">
-                        <li>店铺管理</li>
-                        <li>产品进场</li>
-                        <li>我的订单</li>
-                        <li>我的保荐</li>
-                        <li>私人订制</li>
-                        <li>BB进货</li>
-                </ul>
                 <!--子导航-->
                 <div>
                         <ul class="sub-nav">
@@ -32,7 +7,7 @@
                                 <li @click="toggleTabs('bargain')">BB谈价</li>
                                 <li @click="toggleTabs('meOrder')">我的订单</li>
                         </ul>
-                        <first :is="currentView" keep-view></first>
+                        <div :is="currentView" keep-view></div>
                 </div>
         </section>
 </template>
@@ -64,65 +39,7 @@
         @import "../assets/style/app";
 
         .user-nav {
-                /*导航*/
-                .nav {
-                        @include flexBox;
-                        margin-top: torem(30px);
-                        li {
-                                flex: 1;
-                                display: inline-block;
-                                background: #009966;
-                                padding: torem(10px) 0;
-                                color: $CFFF;
-                                text-align: center;
-                                border-top-left-radius: torem(15px);
-                                border-top-right-radius: torem(15px);
-                                margin-left: torem(5px);
-                        }
-                        li:first-of-type {
-                                margin-left: 0;
-                        }
-                }
-                /*用户信息*/
-                .user {
-                        padding: torem(20px);
-                        @include flexBox;
-                        width: 100%;
-                        /*头像*/
-                        .user-head {
-                                float: left;
-                                @include wh(torem(100px), torem(100px));
-                                img {
-                                        @include wh(100%, 100%);
-                                }
-                        }
-                        /*信息*/
-                        .user-info {
-                                flex: 1;
-                                -webkit-box-flex: 1;
-                                margin-left: torem(20px);
-                                .user-name {
-                                        color: $C333;
-                                        @include fz(30);
-                                        font-weight: bold;
-                                }
-                                .user-level {
-                                        margin-top: torem(20px);
-                                }
-                        }
-                        /*设置*/
-                        .user-set {
-                                .btn-setting {
-                                        width: torem(64px);
-                                        height: torem(64px);
-                                        img {
-                                                width: 100%;
-                                                height: 100%;
-                                        }
-                                }
-                        }
 
-                }
 
                 /*子导航*/
                 .sub-nav {

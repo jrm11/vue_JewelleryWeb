@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     scrollBehavior(to, from, savePosition) {
@@ -35,10 +35,10 @@ export default new Router({
         },
 
         {
-            path: '/index',
-            name: "index",
+            path: '/stockGoods/index',
+            name: "stockGoods/index",
             meta: {
-                title: "头部"
+                title: "主页"
             },
             component: (resolve) => require(['@/views/stockGoods/index.vue'], resolve)
         },
@@ -57,6 +57,14 @@ export default new Router({
                 title: "忘记密码"
             },
             component: (resolve) => require(['@/views/forgetPwd.vue'], resolve)
-        }
+        },
+        {
+            path: '/managerSystem/index',
+            name: "managerSystem/index",
+            meta: {
+                title: "管理系统"
+            },
+            component: (resolve) => require(['@/views/managerSystem/index.vue'], resolve)
+        },
     ]
 })

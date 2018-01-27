@@ -32,7 +32,7 @@
                                 <li @click="toggleTabs('bargain')">BB谈价</li>
                                 <li @click="toggleTabs('meOrder')">我的订单</li>
                         </ul>
-                        <first :is="currentView" keep-view></first>
+                        <div :is="currentView" keep-view></div>
                 </div>
         </section>
 </template>
@@ -72,11 +72,11 @@
                                 flex: 1;
                                 display: inline-block;
                                 background: #009966;
-                                padding: torem(10px) 0;
+                                padding: torem(5px) 0;
                                 color: $CFFF;
                                 text-align: center;
-                                border-top-left-radius: torem(15px);
-                                border-top-right-radius: torem(15px);
+                                border-top-left-radius: torem(10px);
+                                border-top-right-radius: torem(10px);
                                 margin-left: torem(5px);
                         }
                         li:first-of-type {
@@ -85,7 +85,7 @@
                 }
                 /*用户信息*/
                 .user {
-                        padding: torem(20px);
+                        padding: torem(10px);
                         @include flexBox;
                         width: 100%;
                         /*头像*/
@@ -98,6 +98,7 @@
                         }
                         /*信息*/
                         .user-info {
+                                position: relative;
                                 flex: 1;
                                 -webkit-box-flex: 1;
                                 margin-left: torem(20px);
@@ -107,7 +108,8 @@
                                         font-weight: bold;
                                 }
                                 .user-level {
-                                        margin-top: torem(20px);
+                                        position: absolute;
+                                        bottom:0;
                                 }
                         }
                         /*设置*/

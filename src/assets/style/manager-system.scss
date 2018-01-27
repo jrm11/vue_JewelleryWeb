@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+//管理系统公用文件
+$MSBF:#FFFFFF;
+$MSBF2:#F2F2F2;
+
+//字体大小
+$MSF12:12px;
+$MSF14:14px;
+$MSF16:16px;
+
+//字体颜色
+$MSC333:#333333;
+$MSC666:#666666;
+//边框
+$MSBD:#DDDDDD;
+
+//图片宽高
+$MSWH64:64px;
+
+//边距
+$MS5:5px;
+$MS10:10px;
+
+.btn {
+  background: #0099ff;
+  color: #fff !important;
+  border: 1px solid #0099ff;
+  padding: torem(5px) torem(10px);
+  vertical-align: top;
+  font-size: torem(14px);
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+@mixin mscb{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: $MSC666;
+}

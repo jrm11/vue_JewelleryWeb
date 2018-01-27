@@ -103,10 +103,12 @@
                                         margin-right: torem(20px);
                                 }
                                 .media-body {
+                                        position: relative;
                                         flex: 1;
                                         -webkit-box-flex: 1;
                                         .media-sub-head {
-                                                padding-top: torem(25px);
+                                                position: absolute;
+                                                bottom: 0;
                                                 .product-detail {
                                                         border: 1px solid $BDDD;
                                                         padding: torem(5px) torem(15px);

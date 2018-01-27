@@ -17,18 +17,13 @@
         export default {
                 data() {
                         return {
-                                currentView: "meOrder"
                         }
                 },
                 components: {
                         headerTop,
                         userNav,
                 },
-                methods: {
-                        toggleTabs(tabText){
-                                this.currentView = tabText;
-                        }
-                }
+
 
         }
 </script>

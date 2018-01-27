@@ -1,30 +1,5 @@
 <template>
         <section class="user-nav">
-                <!--用户信息-->
-                <div class="user clearfix">
-                        <div href="#" class="user-head">
-                                <a href=""><img src="../assets/image/avatar.png" alt="头像"/></a>
-                        </div>
-                        <div class="user-info">
-                                <p class="user-name">小明明</p>
-                                <p class="user-level">进场 级别10</p>
-
-                        </div>
-                        <div class="user-set">
-                                <a href="#" class="btn-setting">
-                                        <img src="../assets/image/setting.svg" alt="">
-                                </a>
-                        </div>
-                </div>
-                <!--导航-->
-                <ul class="nav">
-                        <li>店铺管理</li>
-                        <li>产品进场</li>
-                        <li>我的订单</li>
-                        <li>我的保荐</li>
-                        <li>私人订制</li>
-                        <li>BB进货</li>
-                </ul>
                 <!--子导航-->
                 <div>
                         <ul class="sub-nav">
@@ -124,7 +99,6 @@
                                 }
                         }
 
-                }
 
                 /*子导航*/
                 .sub-nav {

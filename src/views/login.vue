@@ -39,7 +39,6 @@
 
 <script>
     import headerTop from '@/components/header.vue'
-    import {Toast} from 'mint-ui';
 
     export default {
         data() {
@@ -76,7 +75,7 @@
                 if (this.password === "" || this.username === "") {
                     alert('请输入账号或密码')
                 }else{
-                    this.$router.push("/index")
+                    this.$router.push("/main")
                 }
             },
             register(){

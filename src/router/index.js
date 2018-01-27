@@ -67,4 +67,29 @@ export default new Router({
             component: (resolve) => require(['@/views/managerSystem/index.vue'], resolve)
         },
     ]
+                {
+                        path: '/index',
+                        name: "index",
+                        meta: {
+                                title: "头部"
+                        },
+                        component: (resolve) => require(['@/views/stockGoods/index.vue'], resolve)
+                },
+                {
+                        path: '/register',
+                        name: "register",
+                        meta: {
+                                title: "注册"
+                        },
+                        component: (resolve) => require(['@/views/register.vue'], resolve)
+                },
+                {
+                        path: '/forgetPwd',
+                        name: "forgetPwd",
+                        meta: {
+                                title: "忘记密码"
+                        },
+                        component: (resolve) => require(['@/views/forgetPwd.vue'], resolve)
+                }
+        ]
 })

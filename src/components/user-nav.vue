@@ -84,7 +84,7 @@
                                 }
                                 .user-level {
                                         position: absolute;
-                                        bottom:0;
+                                        bottom: 0;
                                 }
                         }
                         /*设置*/
@@ -98,7 +98,7 @@
                                         }
                                 }
                         }
-
+                }
 
                 /*子导航*/
                 .sub-nav {

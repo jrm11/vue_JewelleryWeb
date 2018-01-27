@@ -5,9 +5,7 @@ import App from './App'
 import router from './router'
 import 'lib-flexible'
 import './assets/style/px2rem.scss'
-import axios from 'axios'
-Vue.prototype.$http = axios
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

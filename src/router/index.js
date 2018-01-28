@@ -17,7 +17,14 @@ export default new Router({
     },
     //路由实现懒加载
     routes: [
-
+        {
+            path: '/select',
+            name: 'select',
+            meta: {
+                title: "下拉选择菜单"
+            },
+            component:(resolve)=>require(['@/views/select/select.vue'],resolve)
+        },
         {
             path: '/login',
             name: 'login',

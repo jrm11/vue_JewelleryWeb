@@ -42,11 +42,46 @@
             }
         }
     }
+
+    $(function () {
+        let flag = true;
+        $(".j-title-modify").on("click", function () {
+            if (flag) {
+                $(".j-title-input").attr("disabled", false);
+                $(this).html("完成");
+            } else {
+                $(".j-title-input").attr("disabled", true);
+                $(this).html("修改");
+            }
+            flag = !flag;
+        });
+
+        let flag1 = true;
+
+        $(document).on("click", ".j-modify", function () {
+            if (flag1) {
+                $(this).parent().parent().find(".level-item input").attr("disabled", false);
+                $(this).html("完成");
+            } else {
+                $(this).parent().parent().find(".level-item input").attr("disabled", true);
+                $(this).html("修改");
+            }
+
+            flag1 = !flag1;
+        });
+
+
+    })
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
     @import "../../../assets/style/app";
-
+    .accordion li.open .btn-show img {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
     .tab {
         margin-top: torem(15px);
         width: 100%;

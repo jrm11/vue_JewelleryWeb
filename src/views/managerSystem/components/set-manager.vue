@@ -6,7 +6,7 @@
                 <span class="fl">顾客身份购物折扣：增加</span>
                 <div class="fr">
                     <input class="form-control j-title-input" type="text" value="10"
-                           disabled="true"><span>%&emsp;</span>
+                           :disabled="disabled"><span>%&emsp;</span>
                     <button class="btn j-title-modify">修改</button>
                 </div>
             </div>
@@ -198,7 +198,27 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        data() {
+            return {
+                disabled: true,
+                flag: true
+            }
+        },
+        methods: {
+            toggle() {
+                if (this.flag) {
+                    this.disabled = false;
+
+                } else {
+                    this.disabled = true;
+                }
+                this.flag = !this.flag;
+            }
+        }
+    }
+
+
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
@@ -229,7 +249,7 @@
             border-bottom: 1px solid $BDDD;
             padding: torem($MS10);
             h3 {
-                padding-bottom:torem($MS10);
+                padding-bottom: torem($MS10);
                 font-weight: bold;
                 @include fz($MSF16);
             }

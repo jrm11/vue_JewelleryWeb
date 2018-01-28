@@ -6,6 +6,7 @@ import router from './router'
 import 'lib-flexible'
 import './assets/style/px2rem.scss'
 Vue.config.productionTip = false;
+import $ from 'jquery'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
